@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/benchmark@2.1.4/benchmark.min.js"></script>
+	<!-- <script crossorigin src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script> -->
+	<script defer src="./index.js"></script>
+	<title>Benchmark It!</title>
+</head>
+<body>
+	<style>
+		textarea {
+			resize: none;
+			margin: 0;
+			font-family: monospace;
+		}
+		code {
+			display: block;
+		}
+	</style>
+	<div class="container">
+		<h3>Benchmark It!</h3>
+	</div>
+	<div class="container">
+		<form id="input-form">
+			<textarea id="input" rows="10"></textarea>
+			<button type="submit" id="submit-button">Run Test Suite</button>
+		</form>
+	</div>
+	<div class="container" id="output-region">
+		
+	</div>
+</body>
+</html>
